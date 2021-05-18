@@ -24,6 +24,7 @@
             <ul id="bar">
                 
                 <li v-for="(image, index) in images" 
+                @click="pointer(index)"
                 :class="(index == indexs)? `active`:``"
                  class="fas fa-circle"
                  >

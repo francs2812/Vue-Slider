@@ -30,7 +30,12 @@ var  app = new Vue (
                    this.active=true 
                 }
                 console.log(this.active);
+            },
+            pointer : function(index) {
+                 this.indexs = index
             }
+
+
 
         }
     }
