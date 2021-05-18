@@ -16,11 +16,22 @@
     <div id="root">
         <div id="container_image">
             <div id="arrow_back">
-                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-left" 
+                @click ="left"
+                ></i>
             </div>
-            <img :src="images[index]" alt="">
+            <img :src="images[indexs]" alt="">
+            <ul id="bar">
+                
+                <li v-for="(image, index) in images" 
+                :class="(index == indexs)? `active`:``"
+                 class="fas fa-circle"
+                 >
+                </li>
+                
+            </ul>
             <div id="arrow_front">
-                <i class="fas fa-angle-right" @click ="left" ></i>
+                <i class="fas fa-angle-right" @click ="right" ></i>
             </div>
         </div>
     </div>
