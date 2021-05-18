@@ -1,0 +1,49 @@
+/* COMMINT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* /COMMINT */
+
+/* container generale */
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+}
+/* /container generale */
+
+/* conteiner immagine */
+#container_image {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* background-color: blue; */
+ } 
+
+#container_image > image {
+    object-fit: cover;
+}
+/* /conteiner immagine */
+
+/* freccie */
+#arrow_front > i,
+#arrow_back > i {
+    font-size: 80px;
+}
+#arrow_front ,
+#arrow_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* /freccie */
